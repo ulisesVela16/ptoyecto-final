@@ -62,10 +62,12 @@ function drawParticle() {
 window.onload = () => {
     createParticles();
 }
+
 window.onresize = () => {
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
 }
+
 canvas.addEventListener('click', evt => {
     let newParticle = new Particle;
     newParticle.positionX = evt.clientX;
@@ -74,7 +76,6 @@ canvas.addEventListener('click', evt => {
     drawParticle();
 });
 
-// Mensaje de bienvenida
 const welcomeText = document.getElementById('welcome-text');
 const startButton = document.getElementById('start-button');
 
@@ -85,14 +86,16 @@ let charIndex = 0;
 let typingDelay = 50;
 
 function typeWelcomeText() {
-    if (charIndex < welcomeMessage.length) {
-        welcomeText.innerHTML += welcomeMessage.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeWelcomeText, typingDelay);
-    } else {
-        welcomeText.innerHTML += `<span class="name-text">${myName}</span>`;
-        startButton.style.display = "block";
-    }
+    const intervalId = setInterval(function () {
+        if (charIndex < welcomeMessage.length) {
+            welcomeText.innerHTML += welcomeMessage.charAt(charIndex);
+            charIndex++;
+        } else {
+            welcomeText.innerHTML += `<span class="name-text">${myName}</span>`;
+            startButton.style.display = "block";
+            clearInterval(intervalId); // Detiene la animación cuando se completa
+        }
+    }, typingDelay);
 }
 
 typeWelcomeText();

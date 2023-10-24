@@ -49,12 +49,20 @@ canvas {
 
 .start-button {
     padding: 10px 20px;
-    background-color: transparent; /* Elimina el fondo blanco del botón */
+    background-color: transparent;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
     margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Color azul con opacidad */
+    text-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Color azul con opacidad */
+}
+
+.start-button:hover {
+    background-color: #007bff; /* Color azul más intenso al pasar el mouse */
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8); /* Resplandor más intenso al pasar el mouse */
+    text-shadow: 0 0 20px rgba(0, 0, 255, 0.8); /* Resplandor más intenso al pasar el mouse */
 }
