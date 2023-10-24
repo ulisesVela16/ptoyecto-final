@@ -101,5 +101,5 @@ function typeWelcomeText() {
 typeWelcomeText();
 
 startButton.addEventListener("click", () => {
-    window.location.href = "perfil.html";
+    window.location.href = "index.html"; // Redirige al usuario a la página "perfil.html"
 });
