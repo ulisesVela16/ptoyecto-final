@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.welcome-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.console-text {
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #fff;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.welcome-text {
+    color: #fff;
+}
+
+.start-button {
+    padding: 10px 20px;
+    background-color: transparent; /* Elimina el fondo blanco del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
