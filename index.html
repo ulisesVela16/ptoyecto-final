@@ -6,68 +6,225 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Perfil</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mi perfil</a>
-      
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <button class="navbar-toggler d-none ms-auto" type="button" id="theme-toggler">
-            <i class="bi bi-moon-fill text-white" id="theme-icon"></i>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Biografia</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tecnologias
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">HTML</a></li>
-                  <li><a class="dropdown-item" href="#">CSS</a></li>
-                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi perfil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="navbar-toggler d-none ms-auto" type="button" id="theme-toggler">
+                <i class="bi bi-moon-fill text-white" id="theme-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Biografia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tecnologias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Base de Datos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Base de Datos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cursos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>  
-      <div class="container bg">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-3 profile-image text-center">
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
                 <img class="rounded-circle img-fluid" src="/img/perfilYo.jpg" alt="Mi Foto de Perfil">
             </div>
-    
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <h1 class="text-xl md:text-4xl font-bold mb-2">Ulises Uriel Velazquez Velazquez</h1>
                 <p class="text-lg md:text-xl">Nacionalidad: Mexicana</p>
                 <p class="text-lg md:text-xl">País: México</p>
                 <p class="text-lg md:text-xl">Estado: Zacatecas</p>
                 <p class="text-lg md:text-xl">Idiomas: Español, Inglés</p>
-                <a href="/files/curriculum.pdf" class="btn btn-primary mt-4">Descargar Curriculum</a>
+                <a href="/files/curriculum.pdf" class="neon-button">Descargar Curriculum</a>
+
             </div>
         </div>
     </div>
-
-
-
+    <section class="bg-gray-800 py-8 section-style">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Biografia</h2>
+                <p class="text-lg md:text-xl text-white font-bold mb-4">Soy un apasionado desarrollador web con experiencia en una variedad de tecnologías y lenguajes de programación. Me encanta crear aplicaciones web y contribuir a proyectos emocionantes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea molestias dolore sit vero accusantium porro, nam architecto tenetur, voluptate natus odio modi a illo recusandae, fugit iure sed fuga nostrum?. </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-800 py-8 section-style">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Tecnologías y Lenguajes de Programación</h2>
+                <div class="row">
+                    <div class="col-6 col-md-3 p-3 text-center">
+                        <img src="/img/html.svg" alt="HTML" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                        <p class="text-white mt-2">HTML</p>
+                    </div>
+                    <div class="col-6 col-md-3 p-3 text-center">
+                        <img src="/img/css.svg" alt="CSS" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                        <p class="text-white mt-2">CSS</p>
+                    </div>
+                    <div class="col-6 col-md-3 p-3 text-center">
+                        <img src="/img/js.svg" alt="JavaScript" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                        <p class="text-white mt-2">JavaScript</p>
+                    </div>
+                    <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/node-js.svg" alt="Node.js" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">Node.js</p>
+                  </div>
+                  <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/php.svg" alt="PHP" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">PHP</p>
+                  </div>
+                  <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/bootstrap-xx.svg" alt="Bootstrap" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">Bootstrap</p>
+                  </div>
+                  <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/tailwindcss2.svg" alt="Tailwind CSS" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">Tailwind CSS</p>
+                  </div>
+                  <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/android.svg" alt="Android (Java)" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">Android (Java)</p>
+                  </div>
+                  <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/cordova.svg" alt="Cordova" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">Cordova</p>
+                  </div>
+                  <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/code.svg" alt="Visual Studio Code" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">Visual Studio Code</p>
+                  </div>
+                  <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/csharp.svg" alt="C#" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">C#</p>
+                  </div>
+                  <div class="col-6 col-md-3 p-3 text-center">
+                      <img src="/img/c-logo.svg" alt="C#" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                      <p class="text-white mt-2">C++</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-800 py-8 section-style">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Bases de Datos</h2>
+                <div class="row">
+                    <div class="col-6 col-md-3 p-3 text-center">
+                        <img src="/img/mysql-4.svg" alt="MySQL" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                        <p class="text-white mt-2">MySQL</p>
+                    </div>
+                    <div class="col-6 col-md-3 p-3 text-center">
+                        <img src="/img/mongodb.svg" alt="MongoDB" class="tech-image img-fluid zoom-image" style="max-width: 100px;">
+                        <p class="text-white mt-2">MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-800 py-8 section-style">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Cursos</h2>
+                <div class="row">
+                    <div class="col-12 col-md-4 p-3">
+                        <div class="card h-100 scale-up">
+                            <img src="/img/redes.png" class="card-img-top" alt="Imagen del curso 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Técnico en redes de datos</h5>
+                                <p class="card-text">Descripción del curso o detalles adicionales aquí.</p>
+                                <a href="/enlace-al-curso1" class="btn btn-primary">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 p-3">
+                        <div class="card h-100 scale-up">
+                            <img src="/img/nube.png" class="card-img-top" alt="Imagen del curso 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Fundamentos del cómputo en la nube</h5>
+                                <p class="card-text">Descripción del curso o detalles adicionales aquí.</p>
+                                <a href="/enlace-al-curso2" class="btn btn-primary">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 p-3">
+                        <div class="card h-100 scale-up">
+                            <img src="/img/virt.png" class="card-img-top" alt="Imagen del curso 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Fundamentos de virtualización</h5>
+                                <p class="card-text">Descripción del tercer curso o detalles adicionales aquí.</p>
+                                <a href="/enlace-al-curso3" class="btn btn-primary">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-800 py-8 section-style">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">Proyectos</h2>
+              <div class="row">
+                  <div class="col-12 col-md-4 p-3">
+                      <div class="card h-100 zoom">
+                          <img src="/img/api.svg" class="card-img-top" alt="Imagen del proyecto 1" style="max-height: 150px;">
+                          <div class="card-body">
+                              <h5 class="card-title">Nombre del Proyecto 1</h5>
+                              <p class="card-text">Descripción del proyecto o detalles adicionales aquí.</p>
+                              <a href="/enlace-al-proyecto1" class="btn btn-primary">Ver Proyecto</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 p-3">
+                      <div class="card h-100 zoom">
+                          <img src="/img/ropa.svg" class="card-img-top" alt="Imagen del proyecto 2" style="max-height: 150px;">
+                          <div class="card-body">
+                              <h5 class="card-title">Nombre del Proyecto 2</h5>
+                              <p class="card-text">Descripción del proyecto o detalles adicionales aquí.</p>
+                              <a href="/enlace-al-proyecto2" class="btn btn-primary">Ver Proyecto</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 p-3">
+                      <div class="card h-100 zoom">
+                          <img src="/img/android-logo.svg" class="card-img-top" alt "Imagen del proyecto 3" style="max-height: 150px;">
+                          <div class="card-body">
+                              <h5 class="card-title">Nombre del Proyecto 3</h5>
+                              <p class="card-text">Descripción del proyecto o detalles adicionales aquí.</p>
+                              <a href="/enlace-al-proyecto3" class="btn btn-primary">Ver Proyecto</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 </body>

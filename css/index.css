@@ -1,0 +1,34 @@
+/* Estilos para el fondo del cuerpo */
+body {
+    background: linear-gradient(135deg, #000, #17133d);
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+/* Estilos para la animación de zoom */
+.zoom-image {
+    transition: transform 0.2s ease-in-out;
+}
+
+.zoom-image:hover {
+    transform: scale(1.1);
+}
+/* Estilos para el botón de neón */
+.neon-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #00a7f5, #ee0979);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.neon-button:hover {
+    transform: scale(1.05);
+}
