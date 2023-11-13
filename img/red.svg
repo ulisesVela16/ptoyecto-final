@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="300" height="200" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Router -->
+  <rect x="280" y="150" width="40" height="40" rx="5" ry="5" fill="#3498db" />
+  <text x="300" y="210" text-anchor="middle" fill="#ffffff" font-size="10">Router</text>
+
+  <!-- Servidor -->
+  <rect x="100" y="150" width="40" height="40" rx="5" ry="5" fill="#2ecc71" />
+  <text x="120" y="210" text-anchor="middle" fill="#ffffff" font-size="10">Servidor</text>
+
+  <!-- Cliente -->
+  <rect x="460" y="150" width="40" height="40" rx="5" ry="5" fill="#e74c3c" />
+  <text x="480" y="210" text-anchor="middle" fill="#ffffff" font-size="10">Cliente</text>
+
+  <!-- Conexiones -->
+  <line x1="120" y1="170" x2="280" y2="170" />
+  <line x1="320" y1="170" x2="460" y2="170" />
+
+  <!-- Detalles de conexiones -->
+  <text x="200" y="160" text-anchor="middle" fill="#ffffff" font-size="10">Ethernet</text>
+  <text x="390" y="160" text-anchor="middle" fill="#ffffff" font-size="10">Fibra Óptica</text>
+</svg>
+
