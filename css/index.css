@@ -1,5 +1,3 @@
-/* Otros estilos que ya tenías */
-
 body {
     background: linear-gradient(135deg, #000, #17133d);
     font-family: 'Courier New', monospace;
@@ -19,7 +17,7 @@ body {
 .neon-button {
     display: inline-block;
     padding: 10px 20px;
-    color: white; /* Agregar color de fuente */
+    color: white;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -29,8 +27,8 @@ body {
     background-color: transparent;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Color azul con opacidad */
-    text-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Color azul con opacidad */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
 }
 
 .neon-button::before,
@@ -66,19 +64,19 @@ body {
 
 .neon-button:hover {
     transform: scale(1.05);
-    background-color: #00a7f5; /* Cambia el color de fondo al pasar el cursor */
-    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8); /* Ajusta la intensidad del resplandor */
-    text-shadow: 0 0 20px rgba(0, 0, 255, 0.8); /* Ajusta la intensidad del resplandor */
+    background-color: #00a7f5;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    text-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
 }
 
 /* Estilo específico para hacer el círculo más grande y centrar la imagen */
 .smaller-profile-img {
-    max-width: 300px; /* Ajusta el tamaño según tus preferencias */
-    max-height: 300px; /* Ajusta el tamaño según tus preferencias */
+    max-width: 300px;
+    max-height: 300px;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Evita que la imagen se estire y la centra */
-    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Estilos para las tarjetas */
@@ -87,25 +85,25 @@ body {
 }
 
 .card-body {
-    font-size: 12px; /* Ajusta el tamaño del texto según tus preferencias */
+    font-size: 12px;
 }
 
 /* Estilos para los iconos "neón" */
 .social-icon {
-    color: #fff; /* Color base de los iconos */
+    color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
 
 .social-icon:hover {
-    color: #4CAF50; /* Color de los iconos al pasar el ratón */
+    color: #2c00f1;
 }
 
 .social-icon::before {
-    content: '\2022'; /* Punto que simulará el resplandor */
+    content: '\2022';
     position: absolute;
-    color: #4CAF50; /* Color del resplandor */
-    font-size: 40px; /* Tamaño del resplandor */
+    color: #ffffff;
+    font-size: 40px;
     opacity: 0;
     transform: scale(0.1);
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
@@ -116,37 +114,6 @@ body {
     transform: scale(1);
 }
 
-/* Estilos para las estrellas de calificación */
-.star {
-    font-size: 2em;
-    color: #FFD700; /* Color de estrella vacía */
-    cursor: pointer;
-}
-
-.star:hover,
-.star.active {
-    color: #FFAC00; /* Color de estrella activa o al pasar el mouse sobre ella */
-}
-
-/* Estilos para la barra de porcentaje */
-.rating-bar {
-    width: 100%;
-    height: 10px; /* Ajusta la altura de la barra */
-    background-color: #ddd; /* Color de fondo de la barra */
-    border-radius: 5px;
-    margin-top: 10px;
-    overflow: hidden;
-}
-
-.percentage-bar {
-    height: 100%;
-    width: 0;
-    background-color: rgb(76, 172, 175); /* Color de la barra de porcentaje */
-    transition: width 0.5s; /* Animación de la transición */
-}
-
-/* Otros estilos que ya tenías */
-
 a {
     text-decoration: none;
 }
@@ -154,29 +121,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-/* Estilos para la barra de porcentaje */
-/* Estilos para la barra de porcentaje */
-.rating-bar {
-    width: 100%;
-    height: 10px; /* Ajusta la altura de la barra */
-    background-color: #ddd; /* Color de fondo de la barra */
-    border-radius: 5px;
-    margin-top: 10px;
-    overflow: hidden;
-}
 
-.percentage-bar {
-    height: 100%;
-    width: 100%; /* Ajusta el ancho inicial de la barra */
-    background-color: #4CAF50; /* Color de la barra de porcentaje */
-    transition: width 0.5s; /* Animación de la transición */
-}
-
-.percentage-text {
-    line-height: 20px;
-    text-align: center;
-    color: #fff; /* Color del texto de porcentaje */
-}
 .social-container {
     display: flex;
     justify-content: center;
@@ -191,7 +136,24 @@ a:hover {
 .social-item i {
     margin-bottom: 10px;
 }
-.social-item i {
-    margin-bottom: 10px;
-    color: #25D366; /* Color de WhatsApp */
+
+#idiomas-images img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.my-form {
+    max-width: 600px; /* ajusta este valor según tus necesidades */
+    margin: 0 auto; /* centra el formulario en la pantalla */
+}
+
+/* Agrega estilos adicionales para dispositivos móviles */
+@media (max-width: 768px) {
+    .form-group {
+        margin-bottom: 15px; /* espacio entre grupos de formulario en dispositivos móviles */
+    }
+
+    .btn {
+        width: 100%; /* el botón ocupa el ancho completo en dispositivos móviles */
+    }
 }
