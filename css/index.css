@@ -157,3 +157,17 @@ a:hover {
         width: 100%; /* el botón ocupa el ancho completo en dispositivos móviles */
     }
 }
+#button {
+    background-color: #00a7f5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #007bb5;
+}

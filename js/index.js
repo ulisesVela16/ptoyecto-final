@@ -1,21 +1,41 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Agrega la funcionalidad para mostrar la alerta con el enlace del proyecto
+    // Bloque para la sección de proyectos
     const verProyectoBtns = document.querySelectorAll('.btn-primary');
 
     verProyectoBtns.forEach(btn => {
-        btn.addEventListener('click', function () {
+        btn.addEventListener('click', function (event) {
             const enlaceProyecto = btn.getAttribute('href');
-            
-            // Utiliza confirm en lugar de alert
-            const confirmacion = confirm('¿Estás seguro de ver el proyecto?');
-
-            // Verifica la respuesta del usuario
-            if (confirmacion) {
-                // Redirige a la dirección del proyecto si el usuario hace clic en "Aceptar"
-                window.location.href = enlaceProyecto;
-            } else {
-              
-            }
+            window.location.href = enlaceProyecto;
         });
+    });
+
+    // Bloque para la sección de cursos
+    const verCursoBtns = document.querySelectorAll('.neon-button');
+
+    verCursoBtns.forEach(btn => {
+        btn.addEventListener('click', function (event) {
+            const enlaceCurso = btn.getAttribute('href');
+            window.location.href = enlaceCurso;
+        });
+    });
+});
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_qzb5ygn';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
     });
 });
