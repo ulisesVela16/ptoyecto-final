@@ -1,5 +1,5 @@
 const nombreCache = "ProyectoUlises"
-const archivosCache=[
+const archivosCache = [
     "/",
     "/welcome.html",
     "/index.html",
@@ -8,7 +8,6 @@ const archivosCache=[
     "/js/app.js",
     "/js/welcome.js",
     "/js/index.js",
-    "/img",
     "/img/android-logo.svg",
     "/img/android.svg",
     "/img/api.svg",
@@ -32,43 +31,53 @@ const archivosCache=[
     "/img/node-js.svg",
     "/img/nube.png",
     "/img/nube.svg",
-    "/img/perfilYo.jpg",  
+    "/img/perfilYo.jpg",
     "/img/php.svg",
     "/img/red.svg",
     "/img/ropa.svg",
     "/img/tailwind-css-1-2.svg",
     "/img/virt.png",
-    "/bootstrap-5.3.2-dist",
     "/img/tailwindcss2.svg",
     "/files/certificadoRedes.pdf",
-    "/files/curriculumUlisesUVV.pdf",
+    "/files/curriculumUlisesVV.pdf",
     "/files/fundamentosNube.pdf",
+    "/bootstrap-5.3.2-dist/css/bootstrap.min.css"
 ]
 
 
-self.addEventListener('install', e => {
-    console.log('El service worker se instalo', e)
+self.addEventListener("install", (e) => {
     e.waitUntil(
-        caches.open(nombreCache).then((cache)=>{
-            console.log("cache guardada correctamente")
-            cache.addAll(archivosCache)
-            .cache(error =>{
-                console.error('Error al añadir archivos a la caché:', error);
-            });
-})
-    )
-})
-
-self.addEventListener('activate', e =>{
-    console.log('El servicio worker activo', e)
-})
-
-self.addEventListener('fetch', e=>{
-    console.log('fetch.. ',e)
-    e.respondWith(
-        caches.match(e.request)
-        .then(respuestaCache =>{
-            return respuestaCache
+        caches.open(nombreCache).then((cache) => {
+            return Promise.all(
+                archivosCache.map((url) => {
+                    return fetch(url)
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error(`Failed to fetch: ${url}`);
+                        }
+                        return cache.put(url, response);
+                    })
+                    .catch((error) => {
+                        console.error(`Error fetching and caching ${url}: ${error}`);
+                    });
+                })
+                );
+            })
+            );
+        });
+        
+        
+        self.addEventListener('activate', e => {
+            // console.log("el service worker activado " + e)
         })
-    )
-})
+        
+        self.addEventListener('fetch', e => {
+            // console.log("fetch " + e)
+            e.respondWith(
+                caches.match(e.request)
+                .then(response => {
+                    return response || fetch(e.request)
+                })
+                    )
+            })
+            
