@@ -6,8 +6,9 @@ const archivosCache=[
     "/css/welcome.css",
     "/css/index.css",
     "/js/app.js",
-    "/js/index.js",
-    "/js/welcome.js"
+    "/js/welcome.js",
+    "/js/index.js"
+   
 ]
 
 
