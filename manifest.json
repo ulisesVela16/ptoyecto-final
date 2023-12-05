@@ -1,0 +1,54 @@
+{
+    "name": "proyectoFinal",
+    "short_name":"Uli",
+    "start_url": "/welcome.html",
+    "description":" Proyecto Final",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#fff",
+    "theme_color":"#fff",
+    "icons": [
+        
+        
+        {
+            "src":"img/icons/ulipwa72.png",
+            "type":"image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src":"img/icons/ulipwa96.png",
+            "type":"image/png",
+            "sizes": "120x120"
+        },
+        {
+            "src":"img/icons/ulipwa128.png",
+            "type":"image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src":"img/icons/ulipwa144.png",
+            "type":"image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src":"img/icons/ulipwa152.png",
+            "type":"image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src":"img/icons/ulipwa196.png",
+            "type":"image/png",
+            "sizes": "196x196"
+        },
+        {
+            "src":"img/icons/ulipwa256.png",
+            "type":"image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src":"img/icons/ulipwa512.png",
+            "type":"image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

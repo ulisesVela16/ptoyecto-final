@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #000, #17133d);
+    background: linear-gradient(135deg, #000, #090718);
     font-family: 'Courier New', monospace;
     color: white;
 }
@@ -96,7 +96,7 @@ body {
 }
 
 .social-icon:hover {
-    color: #2c00f1;
+    color: rgb(0, 113, 148);
 }
 
 .social-icon::before {
@@ -156,18 +156,4 @@ a:hover {
     .btn {
         width: 100%; /* el botón ocupa el ancho completo en dispositivos móviles */
     }
-}
-#button {
-    background-color: #00a7f5;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#button:hover {
-    background-color: #007bb5;
 }
