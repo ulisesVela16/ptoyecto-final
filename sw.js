@@ -24,26 +24,22 @@ const archivosCache=[
     "/img/españa.svg",
     "/img/html.svg",
     "/img/ingles.svg",
-    "/img/ingles.webp",
     "/img/js.svg",
     "/img/libreta.svg",
     "/img/mexico.svg",
     "/img/mongodb.svg",
     "/img/mysql-4.svg",
-    "/img/node.svg",
+    "/img/node-js.svg",
     "/img/nube.png",
     "/img/nube.svg",
-    "/img/perfilYo.jpg",
+    "/img/perfilYo.jpg",  
     "/img/php.svg",
     "/img/red.svg",
-    "/img/redes.png",
     "/img/ropa.svg",
     "/img/tailwind-css-1-2.svg",
-    "/img/tailwindcss2.svg",
     "/img/virt.png",
-    "/img/virt.svg",
-    "/img/icons"
-   
+    "/bootstrap-5.3.2-dist",
+    "/img/tailwindcss2.svg",
 ]
 
 
@@ -52,7 +48,10 @@ self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(nombreCache).then((cache)=>{
             console.log("cache guardada correctamente")
-            cache.addAll(archivosCache);
+            cache.addAll(archivosCache)
+            .cache(error =>{
+                console.error('Error al añadir archivos a la caché:', error);
+            });
 })
     )
 })
