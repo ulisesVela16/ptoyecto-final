@@ -40,6 +40,9 @@ const archivosCache=[
     "/img/virt.png",
     "/bootstrap-5.3.2-dist",
     "/img/tailwindcss2.svg",
+    "/files/certificadoRedes.pdf",
+    "/files/curriculumUlisesUVV.pdf",
+    "/files/fundamentosNube.pdf",
 ]
 
 
